@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="myRest">Hello World, main!</string>
+    <string name="app_name">People\'s Issue</string>
+    <string name="app_id">255687681252540</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_solved">SolvedActivity</string>
+    <string name="title_activity_unsolved">UnsolvedActivity</string>
+    <string name="title_activity_detail_fragment">DetailFragment</string>
+    <string name="title_activity_detail">DetailActivity</string>
+</resources>

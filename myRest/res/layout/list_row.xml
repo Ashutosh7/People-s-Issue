@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_row"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFCC"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+    <!-- Left side Thumbnail -->
+
+    <LinearLayout
+        android:id="@+id/thumbLL"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="5dip"
+        android:gravity="center_vertical"
+        android:padding="3dip" >
+
+        <ImageView
+            android:id="@+id/thumbImg"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <!-- Title /Tag -->
+
+    <TextView
+        android:id="@+id/titleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbLL"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/thumbLL"
+        android:text=""
+        android:textColor="#040404"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+    <!-- textview2 subtext -->
+
+    <TextView
+        android:id="@+id/subtextTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTv"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbLL"
+        android:text=""
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+    <!-- buttons to the right -->
+
+    <TextView
+        android:id="@+id/votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/titleTv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="30dp"
+        android:text="10"
+        android:textColor="#343434"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/votestitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTv"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/votes"
+        android:text="Votes:"
+        android:textColor="#343434"
+        android:textSize="12sp" />
+
+</RelativeLayout>

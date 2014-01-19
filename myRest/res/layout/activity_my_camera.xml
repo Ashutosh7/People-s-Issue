@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:scrollbars="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/TextViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register Complaint"
+            android:textSize="30sp" >
+        </TextView>
+
+        <EditText
+            android:id="@+id/EditTextTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:focusable="true"
+            android:hint="Title"
+            android:inputType="text"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextTags"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Tags(Administration)"
+            android:inputType="text"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/EditTextDescription"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Description"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <CheckBox
+            android:id="@+id/CheckBoxGPS"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Get location via GPS" >
+        </CheckBox>
+
+        <EditText
+            android:id="@+id/EditTextLocation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Location"
+            android:inputType="text"
+            android:textColorHint="#000000" >
+        </EditText>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Capture Image"
+            android:textSize="15sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/intent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Submit"
+            android:textSize="15sp"
+            android:visibility="gone" >
+        </Button>
+
+        <Button
+            android:id="@+id/Share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Share"
+            android:textSize="15sp"
+            android:visibility="gone" >
+        </Button>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
+            android:src="@drawable/icon"
+            android:visibility="gone" >
+        </ImageView>
+    </LinearLayout>
+
+</ScrollView>

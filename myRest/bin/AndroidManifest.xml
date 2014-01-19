@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.becker666.resty"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:debuggable="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.peoplesissues.activities.main"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="myStep.com"
+                    android:scheme="myrest" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.MyCameraActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.Start"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.HttpConnectSample"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.PhotoViewer"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.AndroidFacebookConnectActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+         <activity
+            android:name="com.peoplesissues.activities.AndroidFacebookShare"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+        <activity
+            android:name="com.peoplesissues.activities.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+         <activity
+            android:name="com.peoplesissues.activities.Waiting"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.SolvedActivity"
+            android:label="@string/title_activity_solved" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.UnsolvedActivity"
+            android:label="@string/title_activity_unsolved" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.DetailFragment"
+            android:label="@string/title_activity_detail_fragment" >
+        </activity>
+        <activity
+            android:name="com.peoplesissues.activities.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+
+        <service
+            android:name="com.peoplesissues.services.IssueUploader"
+            android:enabled="true"
+            android:exported="false" >
+        </service>
+    </application>
+
+    <uses-sdk android:minSdkVersion="15" />
+
+</manifest>

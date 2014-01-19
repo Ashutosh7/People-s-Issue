@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background">
+    
+    <ImageView android:id="@+id/detailImg"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:src="@drawable/logo"/>
+    <Button android:id="@+id/dupBtn"
+        android:layout_height="25dp"
+        android:layout_width="25dp"/>
+    <Button android:id="@+id/ddownBtn"
+        android:layout_height="25dp"
+        android:layout_width="25dp"/>
+    <TextView android:id="@+id/dtitleTv"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView android:id="@+id/dtagsTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></TextView>
+</LinearLayout>
